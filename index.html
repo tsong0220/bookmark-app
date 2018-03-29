@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Bookmarkr</title>
+    <title>Bookmark</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
     
@@ -13,9 +13,10 @@
         <form action="#" name="bookmark" class="search">
           <fieldset>
             <legend>Tell us about your bookmark</legend>
-            <input type="text" name="title" id="title" aria-label="title" placeholder="title">
-            <input type="text" name="url" id="url" aria-label="url" placeholder="url">
-            <input type="text" name="description" id="description" aria-label="description" placeholder="description">
+                <input type="text" name="title" id="title" aria-label="title" placeholder="title">
+                <input type="text" name="url" id="url" aria-label="url" placeholder="url">
+                <input type="text" name="description" id="description" aria-label="description" placeholder="description">
+                <button type="submit">Add</button>
           </fieldset>
           <fieldset>
             <legend>Rate the bookmark</legend>
@@ -33,13 +34,12 @@
             <input type="radio" name="rating" id="rating-5">
           </fieldset>
         </form>
-        <main role="main" class="output js-output">
-        </main>
+        <ul class="output"></ul>
       </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="store.js"></script>
+    <script src="bookmark.js"></script>
     <script src="index.js"></script>
     
   </body>
