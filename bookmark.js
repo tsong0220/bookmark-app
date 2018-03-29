@@ -12,7 +12,12 @@ const bookmarkList = (function(){
           <p class="bookmark-descr hidden">${bookmark.desc}</p>
           <div class="item-info">
           <a href="${bookmark.url}" target="_blank" class="bookmark-url">
-          ${bookmark.url}</a>
+          Go To Site</a>
+          <p class="rating">${bookmark.rating}</p>
+        </div>
+        <div class="bookmark-item-controls">
+          <button class="bookmark-toggle" id="details-toggle">details</button>
+          <button class="bookmark-delete" id="details-delete">delete</button>
         </div>
     </li>`;
   }
