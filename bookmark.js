@@ -22,6 +22,15 @@ const bookmarkList = (function(){
     </li>`;
   }
 
+  function renderNewBookmark(data) {
+    const bookmark = generateBookmark(data);
+    $('.output').prepent(bookmark);
+  }
+
+  function bindEventListeners() {
+    renderNewBookmark();
+  }
+
   return {
     generateBookmark,
   };

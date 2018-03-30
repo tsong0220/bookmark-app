@@ -16,9 +16,11 @@ const store = (function() {
     }
 
   ];
-  
+
   return {
-    
+    list:[],
+    expanded: false
+
   };
 
 });
