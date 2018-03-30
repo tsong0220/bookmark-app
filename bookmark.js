@@ -6,7 +6,7 @@
 const bookmarkList = (function(){
   function generateBookmark(bookmark) {
     return `
-    <li class="bookmark-list" bookmark-id="${bookmark.id}>
+    <li class="bookmark-list" data-bookmark-id="${bookmark.id}">
         <h3 class="item-title">${bookmark.title}</h3>
         <div class="item">
           <p class="bookmark-descr hidden">${bookmark.desc}</p>
@@ -16,8 +16,8 @@ const bookmarkList = (function(){
           <p class="rating">${bookmark.rating}</p>
         </div>
         <div class="bookmark-item-controls">
-          <button class="bookmark-toggle" id="details-toggle">details</button>
-          <button class="bookmark-delete" id="details-delete">delete</button>
+          <button class="bookmark-toggle" id="details-toggle" data-bookmark-id="${bookmark.id}">details</button>
+          <button class="bookmark-delete" id="details-delete" data-bookmark-id="${bookmark.id}">delete</button>
         </div>
     </li>`;
   }
