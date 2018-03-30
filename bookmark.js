@@ -24,7 +24,7 @@ const bookmarkList = (function(){
 
   function renderNewBookmark(data) {
     const bookmark = generateBookmark(data);
-    $('.output').prepent(bookmark);
+    $('.output').prepend(bookmark);
   }
 
   function bindEventListeners() {
